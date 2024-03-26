@@ -56,6 +56,7 @@ public class NewMeasurementService {
             }
 
         }
+        System.out.println(response);
         return response;
 
     }

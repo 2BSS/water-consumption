@@ -19,9 +19,9 @@ public class NewMeasurementController {
 
     @CrossOrigin(origins = "http://localhost:3000")
     @PostMapping("/new-measurement")
-    public ResponseEntity<String> createNewMeasurement(@RequestBody Measurement newMeasurement) {
+    public ResponseEntity<Map<String, Object>> createNewMeasurement(@RequestBody Measurement newMeasurement) {
         Map<String, Object> error = newMeasurementService.createNewMeasurement(newMeasurement);
-        return ResponseEntity.ok(error.toString());
+        return ResponseEntity.ok(error);
 
     }
 }
