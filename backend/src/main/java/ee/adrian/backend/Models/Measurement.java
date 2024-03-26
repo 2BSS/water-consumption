@@ -6,7 +6,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "measurements")
-public class NewMeasurement {
+public class Measurement {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -26,7 +26,7 @@ public class NewMeasurement {
 
     // Constructors, getters, and setters
 
-    public NewMeasurement() {
+    public Measurement() {
 
     }
 
