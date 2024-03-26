@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
-import NewEntry from './NewEntry';
+import NewMeasurement from './NewMeasurement';
 import Dashboard from './Dashboard';
 
 function App() {
@@ -10,11 +10,11 @@ function App() {
       <div>
         <nav>
           <ul>
-            <li><Link to="/new-entry">New Entry</Link></li>
+            <li><Link to="/new-measurement">New Entry</Link></li>
           </ul>
         </nav>
         <Routes>
-          <Route path="/new-entry" element={<NewEntry />} />
+          <Route path="/new-measurement" element={<NewMeasurement />} />
         </Routes>
         <Routes>
           <Route path="/dashboard" element={<Dashboard />} />
